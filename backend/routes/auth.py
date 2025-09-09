@@ -26,7 +26,7 @@ def register():
 def login():
     data = request.json
     email = data.get("email")
-    senha = data.get("senha")
+    senha = data.get("password")
 
     conn = get_db()
     cur  = conn.cursor()
